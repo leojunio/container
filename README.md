@@ -127,7 +127,6 @@ docker network disconnect <nome da rede> <nome do container>
 ## Instalar o mongodb atribuindo usuário e senha
 ```shell
 docker run --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=balta -e MONGO_INITDB_ROOT_PASSWORD=e296cd9f mongo
-```
- - <a href="https://balta.io/artigos/mongodb-docker/" target="_blank">Post de Instalaçaõ MongoDB</a>
-
+``` 
+- [Post de Instalação Mongodb](https://balta.io/artigos/mongodb-docker)
   
