@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: leonardo
+      MONGO_INITDB_ROOT_PASSWORD: 1q2w3e4r
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo-js:ro
+      - ./mongo-volume:/data/db
+    networks:
+      - database-net
+
+networks: 
+    database-net:
+      driver: bridge
