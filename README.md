@@ -145,4 +145,12 @@ docker network disconnect <nome da rede> <nome do container>
 docker run --name mongodb -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=balta -e MONGO_INITDB_ROOT_PASSWORD=e296cd9f mongo
 ``` 
 - [Post de Instalação Mongodb](https://balta.io/artigos/mongodb-docker)
-  
+
+## Instalar um cluster Yugabyte local e com persistência dos dados
+```shell
+docker run -d --name yugabyte  -p7000:7000 -p9000:9000 -p5433:5433 -p9042:9042\
+ -v ~/yb_data:/home/yugabyte/var\
+ yugabytedb/yugabyte:latest bin/yugabyted start\
+ --daemon=false 
+ ```
+ - [Instalação do Yugabyte no Docker](https://docs.yugabyte.com/latest/quick-start/create-local-cluster/docker/)
