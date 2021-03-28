@@ -1,14 +1,19 @@
-# Instalação do Docker Container
+# Instalação do Docker Container - CentOS
 ```shell
-$ sudo yum install -y yum-utils
-$ sudo yum-config-manager \
+sudo yum install -y yum-utils
+sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
-$ sudo yum install docker-ce docker-ce-cli containerd.io
-$ sudo systemctl enable docker 
-$ sudo systemctl start docker
-$ sudo usermod -aG docker $USER
+sudo yum install docker-ce docker-ce-cli containerd.io
+sudo systemctl enable docker 
+sudo systemctl start docker
+sudo usermod -aG docker $USER
 ```
+# Instalação do Docker Container - Ubuntu
+
+- [Instalação do Docker no Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+
+
 # Comandos úteis para gerenciamento de container
 
 ## Executar um container novo e dar um nome para a imagem
