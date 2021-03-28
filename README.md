@@ -15,6 +15,10 @@ sudo usermod -aG docker $USER
 
 # Instalação do Docker Compose no Ubuntu
 
+```shell
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+```
 - [Instalaçao do Docker Compose no Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04-pt)
 
 # Comandos úteis para gerenciamento de container
