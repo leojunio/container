@@ -147,7 +147,7 @@ docker container run -d --name <nome do container> --net <nome da rede> <imagem 
 docker network disconnect <nome da rede> <nome do container>
 ```
 
-## Escalar uma aplicação containerzida
+## Escalar uma aplicação em containers
 ```shell
 docker compose up -d --scale worked=<quantidade>
 ```
