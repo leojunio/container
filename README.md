@@ -147,6 +147,15 @@ docker container run -d --name <nome do container> --net <nome da rede> <imagem 
 docker network disconnect <nome da rede> <nome do container>
 ```
 
+## Copiar arquivos de dentro do container para uma pasta local
+```
+docker cp <nome do container>:<caminho da pasta do container> <pasta local>
+```
+### ex:
+```
+docker cp yb-tserver-n1:/mnt/tserver/yb-data/tserver/logs ./logs_yugabyte
+```
+
 ## Escalar uma aplicação em containers
 ```shell
 docker compose up -d --scale worked=<quantidade>
