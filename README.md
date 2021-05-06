@@ -184,3 +184,7 @@ docker run -d --name yugabyte  -p7000:7000 -p9000:9000 -p5433:5433 -p9042:9042\
 ```shell
 docker run --name nifi -p 8091:8080 -i -v ~/document/Nifi/shared-directory:/opt/nifi/nifi-current/ls-target apache/nifi
 ``` 
+```shell
+docker run --name nifi-registry -p 18080:18080 apache/nifi-registry
+```
+- [Instalação do NIFI](https://medium.com/analytics-vidhya/setting-apache-nifi-on-docker-containers-a00e862a8399)
