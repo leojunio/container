@@ -179,3 +179,8 @@ docker run -d --name yugabyte  -p7000:7000 -p9000:9000 -p5433:5433 -p9042:9042\
  --daemon=false 
  ```
  - [Instalação do Yugabyte no Docker](https://docs.yugabyte.com/latest/quick-start/create-local-cluster/docker/)
+
+## Instalar o Nifi
+```shell
+docker run --name nifi -p 8091:8080 -i -v ~/document/Nifi/shared-directory:/opt/nifi/nifi-current/ls-target apache/nifi
+``` 
